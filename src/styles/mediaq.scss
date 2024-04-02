@@ -1,0 +1,51 @@
+@media screen and (width<= 1200px) {
+
+    .adminContainer {
+        overflow: auto;
+    }
+
+    .main-dashboard{
+
+
+        .widget-container, .graph-container,.bottom-table{
+            justify-content: center;
+            padding: 2rem;
+            flex-wrap: wrap;
+        }
+        .bottom-table{
+            height: unset;
+        }
+       
+    }
+
+}
+
+@media screen and (width<= 1100px) {
+
+    .adminContainer {
+        grid-template-columns: 1fr !important;
+    
+    }
+
+    
+
+
+}
+
+@media screen and (width<= 700px) {
+
+    .adminContainer {
+        grid-template-columns: 1fr !important;
+    }
+
+    .table{
+        overflow-x: auto;
+    }
+
+    .main-dashboard .bottom-table .table-box {
+        overflow-x: auto;
+            
+    }
+
+
+}
