@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import "./styles/app.scss";
 import Customers from "./Pages/Customers";
 import Dashboard from "./Pages/Dashboard";
@@ -25,6 +25,7 @@ function App() {
         <Route path="/profile" element={<Profile />} />
       </Routes> */}
       <Routes>
+        {/* <Route path="/" element={<Link to="/dashboard">Visit Dashboard</Link>} /> */}
         <Route path="/" element={<Layout />}>
           <Route index element={<Dashboard />} />
           <Route path="/product" element={<Product />} />
