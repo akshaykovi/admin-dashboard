@@ -14,7 +14,7 @@ function App() {
   // const [count, setCount] = useState(0)
 
   return (
-    <Router>
+    <Router basename="/admin-dashboard">
       {/* <Routes>
         <Route index element={<Dashboard />} />
         <Route path="/product" element={<Product />} />
@@ -28,12 +28,12 @@ function App() {
         {/* <Route path="/" element={<Link to="/dashboard">Visit Dashboard</Link>} /> */}
         <Route path="/" element={<Layout />}>
           <Route index element={<Dashboard />} />
-          <Route path="/product" element={<Product />} />
-          <Route path="/customers" element={<Customers />} />
-          <Route path="/income" element={<Income />} />
-          <Route path="/promote" element={<Promote />} />
-          <Route path="/help" element={<Help />} />
-          <Route path="/profile" element={<Profile />} />
+          <Route path="product" element={<Product />} />
+          <Route path="customers" element={<Customers />} />
+          <Route path="income" element={<Income />} />
+          <Route path="promote" element={<Promote />} />
+          <Route path="help" element={<Help />} />
+          <Route path="profile" element={<Profile />} />
         </Route>
       </Routes>
     </Router>
